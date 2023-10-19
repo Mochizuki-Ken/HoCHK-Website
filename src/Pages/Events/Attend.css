@@ -1,0 +1,28 @@
+.Attend_Main_Div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+
+}
+.Attend_Main_Div label{
+    font-size: xx-large;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 600;
+    color: rgb(235, 185, 69);
+
+}
+.Attend_Main_Div button{
+    transition: 0.2s;
+    width: 300px;
+    height: 60px;
+    border: 0;
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: rgb(235, 185, 69);;
+}

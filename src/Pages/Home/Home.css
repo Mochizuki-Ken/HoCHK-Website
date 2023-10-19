@@ -1,0 +1,17 @@
+.Home_Main_Div{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: antiquewhite; */
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+.Home_Main_Div::-webkit-scrollbar {
+    width: 2px;
+}
+  
+  /* Track */

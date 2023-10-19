@@ -1,0 +1,66 @@
+.SponsorsIntro_Main_Div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    animation: left-in 0.8s;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.SponsorsIntro_Main_Div .Title{
+    font-size:50px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(178, 29, 91);
+}
+.SponsorsIntro_Main_Div .Sponsors_div{
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.SponsorsIntro_Main_Div .Sponsors_div .Sponsor_outline_div{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+.SponsorsIntro_Main_Div .Sponsors_div .Sponsor_outline_div .sponsor_title{
+    font-size:30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(178, 29, 91);
+}
+.SponsorsIntro_Main_Div .Sponsors_div .Sponsor_outline_div .Sponsor_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.SponsorsIntro_Main_Div .Sponsors_div .Sponsor_outline_div .Sponsor_div img{
+    height: 60px;
+
+}
+
+@media screen and (max-width: 600px){
+    .SponsorsIntro_Main_Div .Title{
+        font-size: 40px;
+    }
+    .SponsorsIntro_Main_Div .Sponsors_div .Sponsor_outline_div .sponsor_title{
+        font-size: 25px;
+    }
+    .SponsorsIntro_Main_Div .Sponsors_div{
+        width: 95%;
+    }
+    .SponsorsIntro_Main_Div .Sponsors_div .Sponsor_outline_div .Sponsor_div img{
+        height: 35px;
+    
+    }
+}

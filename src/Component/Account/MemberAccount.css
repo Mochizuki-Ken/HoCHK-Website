@@ -1,0 +1,59 @@
+.MemberAccount_Main_Div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.MemberAccount_Main_Div .bottom_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 20px;
+
+}
+.MemberAccount_Main_Div .bottom_div .LogOut_btn{
+    width: 300px;
+    height: 30px;
+    background-color: rgb(245, 83, 62);
+    color: aliceblue;
+    font-size: large;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.MemberAccount_Main_Div .bottom_div .title1{
+    font-weight: 500;
+    color: rgb(92, 92, 92);
+    font-size: x-large;
+    margin-left: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+}
+
+.MemberAccount_Main_Div .bottom_div .Records_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    padding-top: 20px;
+}
+/* .MemberAccount_Main_Div .options_div button{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.154);
+    font-size: medium;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 500;
+    color: rgb(92, 92, 92);
+} */

@@ -1,0 +1,138 @@
+.AdminAccount_Main_Div{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.AdminAccount_Main_Div .LogOut_btn{
+    width: 300px;
+    height: 30px;
+    background-color: rgb(245, 83, 62);
+    color: aliceblue;
+    font-size: large;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.AdminAccount_Main_Div .Option_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 20px;
+}
+.AdminAccount_Main_Div .Option_div button{
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(205, 205, 205);
+    background-color: rgba(237, 237, 237, 0);
+    font-size: large;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 300;
+}
+.AdminAccount_Main_Div .Work_div{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.AdminAccount_Main_Div .Work_div .Search_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.AdminAccount_Main_Div .Work_div .Search_div input{
+    width: 50%;
+    height: 30px;
+    font-weight: 500;
+    color: rgb(92, 92, 92);
+    font-size: large;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.AdminAccount_Main_Div .Work_div .Search_div button{
+    height: 30px;
+    width: 100px;
+    font-size: large;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: rgb(244, 244, 244);
+    color: rgb(48, 48, 48);
+
+}
+
+.AdminAccount_Main_Div .Work_div .list_div{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.AdminAccount_Main_Div .Work_div .list_div .user_div{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 222, 222);
+}
+.AdminAccount_Main_Div .Work_div .list_div .user_div img{
+    width: 60px;
+    border-radius: 100%;
+}
+.AdminAccount_Main_Div .Work_div .list_div .user_div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.AdminAccount_Main_Div .Work_div .list_div .user_div label{
+    font-weight: 300;
+    color: rgb(130, 130, 130);
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+}
+.AdminAccount_Main_Div .Work_div .list_div .user_div button{
+    width: 150px;
+    height: 20%;
+    font-size: medium;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: rgba(243, 243, 243, 0);
+    border-radius: 10px ;
+    margin-top: 5px;
+}
+@media screen and (max-width: 600px){
+    .AdminAccount_Main_Div .Work_div .list_div .user_div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 5px 10px ;
+        border-radius: 10px;
+        border: 1px solid rgb(222, 222, 222);
+    }
+    .AdminAccount_Main_Div .Work_div .list_div .user_div label{
+        font-size: large;
+    }
+}

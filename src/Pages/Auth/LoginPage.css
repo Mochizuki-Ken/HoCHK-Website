@@ -1,0 +1,172 @@
+.LoginPage_Main_Div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:30px ;
+    overflow-y: scroll;
+} 
+.LoginPage_Main_Div .Login_div{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: right-in 0.5s;
+}
+.LoginPage_Main_Div .Login_div .Title{
+    font-size:50px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    padding: 0 50px;
+    color: rgb(221, 120, 61);
+}
+.LoginPage_Main_Div .Login_div .Login_btn{
+    transition: 0.2s;
+    width: 300px;
+    height: 60px;
+    border: 0;
+    margin-top: 60px;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 20px;
+    /* background-color: rgb(134, 177, 151);
+    background-color: rgb(178, 29, 91); */
+    background-color: rgb(221, 120, 61);
+    margin-bottom: 40px;
+}
+
+.LoginPage_Main_Div .Login_div .Login_btn:hover{
+    background-color: rgba(235, 106, 20, 0.548);
+}
+
+.LoginPage_Main_Div .MemberIntro_div{
+    width: 100%;
+    min-height: 65%;
+    height: auto;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(221, 120, 61);
+    animation: left-in 0.5s;
+}
+
+.LoginPage_Main_Div .MemberIntro_div .Left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 12%;
+    padding-top: 100px;
+}
+.LoginPage_Main_Div .MemberIntro_div .Left .Title{
+    font-size:50px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(243, 243, 243);
+}
+.LoginPage_Main_Div .MemberIntro_div .Left p{
+    color: rgb(255, 252, 246);
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.LoginPage_Main_Div .MemberIntro_div .Left article{
+    margin-bottom: 50px;
+}
+.LoginPage_Main_Div .MemberIntro_div .Left .btn{
+    transition: 0.2s;
+    width: 300px;
+    height: 60px;
+    border: 0;
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: rgb(255, 140, 64);
+}
+.LoginPage_Main_Div .MemberIntro_div .Left .btn:hover{
+    background-color: rgba(255, 171, 87, 0.316);
+}
+.LoginPage_Main_Div .MemberIntro_div .Right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.LoginPage_Main_Div .MemberIntro_div .Right img{
+    width: 50%;
+}
+
+@media screen and (max-width: 600px){
+    .LoginPage_Main_Div .Login_div .Title{
+        font-size: 30px;
+        padding: 0;
+    }
+    .LoginPage_Main_Div .Login_div .Login_btn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .LoginPage_Main_Div .MemberIntro_div{
+        background-color: rgba(255, 255, 255, 0);
+        background-image: url('./../../Media/Coding-02.jpg');
+        background-size: cover;
+        padding-bottom: 0;
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Right{
+        width: 0;
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Right img{
+        display: none;
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Left{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Left{
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)90% , transparent 100%), 
+		linear-gradient(to right, rgb(255, 255, 255) , transparent 100%);
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Left .Title{
+        font-size: xx-large;
+        color: rgb(221, 120, 61);
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Left article{
+        margin-bottom: 0;
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Left p{
+        color: rgb(221, 120, 61);
+        margin-left: 10px;
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .LoginPage_Main_Div .MemberIntro_div .Left .btn{
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        font-size: medium;
+        margin-top: 5px;
+    }
+}

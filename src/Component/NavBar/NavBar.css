@@ -1,0 +1,95 @@
+.NavBar_Main_Div{
+    width: 100%;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NavBar_Main_Div .NavBar_Logo_Image{
+    width: 8%;
+}
+.NavBar_Main_Div .scroll_div{
+    margin-left: auto;
+    margin-right: 10px;
+    /* width: 92%; */
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 10px; */
+    /* white-space:nowrap; */
+}
+.NavBar_Main_Div .scroll_div .link{
+    text-decoration: none;
+    color: rgba(24, 27, 33, 0.537);
+    width:140px;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-left: 1px solid rgb(217, 217, 217);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.NavBar_Main_Div .scroll_div .Login_btn{
+    transition: 0.2s;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    width:140px;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-left: 1px solid rgb(217, 217, 217);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(221, 120, 61);
+    border-radius: 10px;
+    font-weight: 200;
+}
+.NavBar_Main_Div .scroll_div .Login_btn:hover{
+    transition: 0.2s;
+    background-color: rgba(240, 119, 14, 0.543);
+    border-radius: 30px;
+    
+}
+@media screen and (max-width: 600px) {
+    .NavBar_Main_Div{
+        height: 10%;
+    }
+    .NavBar_Main_Div .NavBar_Logo_Image{
+        width: 25%;
+    }
+    /* .NavBar_Main_Div .scroll_div{
+        gap: 15px;
+    } */
+    .NavBar_Main_Div .scroll_div .link{
+        padding: 0 10px;
+        min-width: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .NavBar_Main_Div .scroll_div .Login_btn{
+        padding: 0 20px;
+        min-width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}

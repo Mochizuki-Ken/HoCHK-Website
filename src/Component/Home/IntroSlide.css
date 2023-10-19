@@ -1,0 +1,264 @@
+.LeftInIntro_Main_Div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 197, 89, 0);
+    animation: left-in 0.8s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.LeftInIntro_Main_Div .Left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding-left: 12%;
+
+}
+.LeftInIntro_Main_Div .Left .Title{
+    color: rgba(255, 255, 255, 0.796);
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.LeftInIntro_Main_Div article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.LeftInIntro_Main_Div .Left p{
+    color: rgb(235, 235, 235);
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.LeftInIntro_Main_Div .Left button{
+    transition: 0.2s;
+    width: 300px;
+    height: 60px;
+    border: 0;
+    margin-top: 30px;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: rgba(232, 154, 44, 0);
+}
+.LeftInIntro_Main_Div .Left button:hover{
+    transition: 0.2s;
+    background-color: rgba(241, 241, 241, 0.083);
+    color: rgba(240, 248, 255, 0.489);
+}
+.LeftInIntro_Main_Div .Right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+.LeftInIntro_Main_Div .Right img{
+    width: 45%;
+    height: auto;
+}
+.RightInIntro_Main_Div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    background-color: rgba(106, 191, 101, 0);
+    padding: 0;
+    padding-top: 10px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 10px; */
+    animation: right-in 0.8s;
+    padding-bottom: 10px;
+}
+
+.RightInIntro_Main_Div .Left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 15px;
+
+}
+.RightInIntro_Main_Div .Left img{
+    width: 45%;
+    height: auto;
+}
+.RightInIntro_Main_Div .Right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+.RightInIntro_Main_Div .Right .Title{
+    font-weight: 600;
+    color: rgb(235, 235, 235);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.RightInIntro_Main_Div article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.RightInIntro_Main_Div .Right p{
+    color: rgb(235, 235, 235);
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.RightInIntro_Main_Div .Right button{
+    transition: 0.2s;
+    width: 300px;
+    height: 60px;
+    border: 0;
+    margin-top: 30px;
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: rgba(70, 171, 30, 0);
+}
+.RightInIntro_Main_Div .Right button:hover{
+    transition: 0.2s;
+    background-color: rgb(115, 205, 110);
+    color: rgba(240, 248, 255, 0.489);
+}
+
+@media screen and (max-width: 600px){
+    .LeftInIntro_Main_Div .Left{
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+    
+    }
+    .LeftInIntro_Main_Div .Left .Title{
+        color: rgba(255, 255, 255, 0.796);
+        font-size: 40px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    .LeftInIntro_Main_Div article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .LeftInIntro_Main_Div .Left p{
+        color: rgb(255, 252, 246);
+        font-size: 20px;
+        margin: 0;
+    }
+    .LeftInIntro_Main_Div .Left button{
+        transition: 0.2s;
+        width: 300px;
+        height: 60px;
+        border: 0;
+        margin-top: 30px;
+        color: aliceblue;
+        font-weight: 200;
+        font-size: 20px;
+        background-color: rgba(232, 154, 44, 0);
+    }
+    .LeftInIntro_Main_Div .Left button:hover{
+        transition: 0.2s;
+        background-color: rgba(241, 241, 241, 0.083);
+        color: rgba(240, 248, 255, 0.489);
+    }
+    .LeftInIntro_Main_Div .Right{
+        display: none;
+    }
+    .RightInIntro_Main_Div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* height: 200px; */
+        background-color: rgba(106, 191, 101, 0);
+        padding: 0;
+        padding-top: 10px;
+        /* padding-top: 20px; */
+        /* padding-bottom: 10px; */
+        animation: right-in 0.8s;
+        padding-bottom: 10px;
+    }
+    .RightInIntro_Main_Div .Left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 15px;
+    }
+    .RightInIntro_Main_Div .Left img{
+        width: 30%;
+        height: auto;
+    }
+    .RightInIntro_Main_Div .Right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    .RightInIntro_Main_Div .Right .Title{
+        color: rgb(235, 235, 235);
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .RightInIntro_Main_Div article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .RightInIntro_Main_Div .Right p{
+        color: rgb(235, 235, 235);
+        font-size: medium;
+        margin: 0;
+    }
+    .RightInIntro_Main_Div .Right button{
+        transition: 0.2s;
+        width: 300px;
+        height: 60px;
+        border: 0;
+        margin-top: 30px;
+        color: aliceblue;
+        font-weight: 200;
+        font-size: 20px;
+        background-color: rgba(70, 171, 30, 0);
+    }
+    .RightInIntro_Main_Div .Right button:hover{
+        transition: 0.2s;
+        background-color: rgb(115, 205, 110);
+        color: rgba(240, 248, 255, 0.489);
+    }
+    .RightInIntro_Main_Div .Left{
+        display: none;
+    }
+}

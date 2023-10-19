@@ -1,0 +1,306 @@
+.Event_Main_Div{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 20px 10px;
+    border-radius:10px ;
+    background-color: rgb(254, 254, 254);
+}
+.Event_Main_Div .Left_div{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+}
+.Event_Main_Div .Left_div .left_div{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 40px 0 20px;
+    width: auto;
+    
+}
+.Event_Main_Div .Left_div .left_div .Tutor_Pic{
+    width: 80px;
+    height: 80px;
+    object-fit:cover;
+    box-sizing: content-box;
+    border-radius: 100%;
+
+}
+.Event_Main_Div .Left_div .right_div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    min-width: 80%;
+    word-break: break-all;
+}
+.Event_Main_Div .Left_div .right_div .topic{
+    font-size: larger;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+    margin-bottom: 10px;
+}
+.Event_Main_Div .Left_div .right_div .Tutors_div{
+    margin-bottom: 5px;
+}
+.Event_Main_Div .Left_div .right_div .detail{
+    font-size: medium;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+    color: rgba(96, 96, 96, 0.897);
+    margin-bottom: 5px;
+}
+.Event_Main_Div .Left_div .right_div p{
+    font-size: medium;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+    color: rgba(96, 96, 96, 0.897);
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-top: 1px solid rgb(217, 217, 217);
+    padding-top: 10px;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+.Event_Main_Div .Left_div .right_div .lessdetail p{
+    -webkit-line-clamp: 4;
+}
+.Event_Main_Div .Left_div .right_div .details p{
+    -webkit-line-clamp: 100;
+}
+.Event_Main_Div .Left_div .right_div .Type_div{
+    font-size: small;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+    color: rgba(96, 96, 96, 0.897);
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.Event_Main_Div .Left_div .right_div .Type_div label:hover{
+    color: rgb(0, 166, 255);
+}
+.Event_Main_Div .Right_div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.Event_Main_Div .Right_div .date_div{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.Event_Main_Div .Right_div label{
+    font-size: medium;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 600;
+    color: rgb(237, 185, 95);
+    margin-bottom: 5px;
+}
+.Event_Main_Div .Right_div .title{
+    font-size: large;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 600;
+    color: rgb(237, 185, 95);
+    margin-bottom: 5px;
+}
+.Event_Main_Div .Right_div .btns_div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    gap: 5px;
+}
+.Event_Main_Div .Right_div button{
+    transition: 0.2s;
+    width: 80%;
+    height: 40px;
+    border: 0;
+    color: aliceblue;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    
+    border-radius: 5px;
+}
+.Event_Main_Div .Right_div .Register{
+    background-color: rgb(240, 197, 89);
+}
+.Event_Main_Div .Right_div .Details{
+    background-color: rgba(110, 110, 110, 0);
+    border: 1px solid rgb(204, 204, 204);
+    color: rgb(196, 196, 196);
+    color: rgb(240, 197, 89);
+}
+.Event_Main_Div .Right_div .Register:hover{
+    background-color: rgba(220, 152, 15, 0.386);
+}
+.Event_Main_Div .Right_div .Details:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+
+
+.Event_Main_Div .Qrcode_div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(205, 205, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Event_Main_Div .Qrcode_div img{
+    width: 90%;
+}
+.Event_Main_Div .Qrcode_div button{
+    width: 80%;
+    background-color: aliceblue;
+    font-size: medium;
+}
+@media screen and (max-width: 600px){
+    .Event_Main_Div{
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Event_Main_Div .Left_div{
+        
+        width: 100%;
+    }
+    .Event_Main_Div .Left_div .left_div{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 10px 0 5px;
+        width: auto;
+        
+    }
+    .Event_Main_Div .Left_div .left_div .Tutor_Pic{
+        width: 50px;
+        height: 50px;
+        object-fit:cover;
+        box-sizing: content-box;
+        border-radius: 100%;
+    
+    }
+    .Event_Main_Div .Left_div .right_div{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .Event_Main_Div .Left_div .right_div .topic{
+        font-size: large;
+        font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+        font-weight: 600;
+        color: rgb(73, 73, 73);
+        margin-bottom: 10px;
+    }
+    .Event_Main_Div .Left_div .right_div .Tutors_div{
+        margin-bottom: 5px;
+    }
+    .Event_Main_Div .Left_div .right_div .detail{
+        font-size: small;
+        font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+        font-weight: 400;
+        color: rgba(96, 96, 96, 0.897);
+        margin-bottom: 5px;
+    }
+    .Event_Main_Div .Left_div .right_div p{
+        font-size: small;
+        font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+        font-weight: 400;
+        color: rgba(96, 96, 96, 0.897);
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-top: 1px solid rgb(217, 217, 217);
+        padding-top: 10px;
+    }
+    .Event_Main_Div .Left_div .right_div .Type_div{
+        font-size: small;
+        font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+        font-weight: 400;
+        color: rgba(96, 96, 96, 0.897);
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .Event_Main_Div .Left_div .right_div .Type_div label:hover{
+        color: rgb(0, 166, 255);
+    }
+    .Event_Main_Div .Right_div{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 80%;
+    }
+    .Event_Main_Div .Right_div .date_div{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        border-top: 1px solid rgb(227, 227, 227);
+        margin-top: 10px;
+        padding-top:10px ;
+    }
+    .Event_Main_Div .Right_div label{
+        margin-bottom: 0px;
+        font-size: small;
+    }
+    .Event_Main_Div .Right_div .title{
+        margin-bottom: 0px;
+        font-size: small;
+    }
+    .Event_Main_Div .Right_div .btns_div{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .Event_Main_Div .Right_div button{
+        width: 100%;
+        
+    }
+
+    .Event_Main_Div .Qrcode_div{
+
+        width: 90%;
+        
+    }
+    .Event_Main_Div .Qrcode_div img{
+        width: 90%;
+    }
+    
+    
+}
