@@ -15,7 +15,7 @@ export default function AdminAccount({Auth}) {
 
   function Serach(){
     firebase.firestore().collection('Users')
-      .where("UserName",'==',SearchText)
+      .where("UserEmail",'==',SearchText)
       .onSnapshot((datas)=>{
           let Datas = datas.docs.map((data)=>{
             return({...data.data(),id:data.id})
@@ -49,7 +49,7 @@ export default function AdminAccount({Auth}) {
       <div className='Work_div'>
 
         <div className='Search_div'>
-          <input value={SearchText} onChange={(e)=>{SetSearchText(e.target.value)}} />
+          <input value={SearchText} placeholder=' user gamil :' onChange={(e)=>{SetSearchText(e.target.value)}} />
           <button onClick={()=>{Serach()}}>Search</button>
         </div>
 

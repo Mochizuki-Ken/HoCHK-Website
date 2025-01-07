@@ -23,11 +23,14 @@ export default function EventsPage() {
 
   const lastPostRef = useRef()
 
+  const currentDate = new Date();
+
 
   function getNextData(){
     if (Type.length>=1){
       firebase.firestore().collection('Events')
       .where("Type",'array-contains-any',Type)
+      .where("CreateAt","<",currentDate)
       .orderBy('CreateAt')
       .startAfter(lastPostRef.current || 0)
       .limit(2)
@@ -41,6 +44,7 @@ export default function EventsPage() {
       })
     }else{
       firebase.firestore().collection('Events')
+      .where("CreateAt","<",currentDate)
       .orderBy('CreateAt','desc')
       .startAfter(lastPostRef.current || 0)
       .limit(2)
@@ -60,6 +64,7 @@ export default function EventsPage() {
     if (Type.length>=1){
       firebase.firestore().collection('Events')
       .where("Type","array-contains-any",Type)
+      .where("CreateAt","<",currentDate)
       .orderBy('CreateAt')
       .limit(3)
       .onSnapshot
@@ -72,6 +77,7 @@ export default function EventsPage() {
       })
     }else{
       firebase.firestore().collection('Events')
+      .where("CreateAt","<",currentDate)
       .orderBy('CreateAt','desc')
       .limit(3)
       .onSnapshot
@@ -151,7 +157,7 @@ export default function EventsPage() {
       <div className="Events_Main_Div">
         {Events_data.map((e)=>{
           return(
-            <Event SetTYPE={SetTYPE}  data={e} type={Auth.UserLevel} userInfo={{uid:Auth.UserID||'none',name:Auth.UserName||"none"}}/>
+            <Event SetTYPE={SetTYPE}  data={e} type={Auth.UserLevel} userInfo={{uid:Auth.UserID||'none',name:Auth.UserName||"none",imgUrl:Auth.UserImage||"none"}}/>
           )
         })}
         {Events_data.length!==0&&<Waypoint  onEnter={()=>{getNextData();console.log('hhh')}}/>}

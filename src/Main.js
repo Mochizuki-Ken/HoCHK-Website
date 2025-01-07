@@ -25,6 +25,7 @@ export default function Main() {
       if  (user){
         firebase.firestore().collection('Users').doc(user.uid).get().then((data)=>{
           SetAuth({...data.data(),...user,user_state:true})
+          console.log(data.data())
         })
         
       }else{
@@ -43,19 +44,20 @@ export default function Main() {
 
         <Routes >
           
-            <Route element={<EventsPage/>}  path='/events'/>
             <Route element={<CommunityPage/>} path='/community'/>
             <Route element={<About/>} path='/about'/>
-            <Route element={<LoginPage/>} path='login' />
-            <Route element={<ContactPage/>} path='contact' />
-            <Route element={<JoinUsPage/>} path='joinus' />
-            { Auth.user_state && <Route element={<AccountPage/>} path='account' />}
-            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostNews/>} path='admin_post_news' />}
-            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostNews type={'edit'}/>} path='admin_update_post/:pid' />}
-            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostEvent/>} path='admin_post_event' />}
-            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostEvent type={'edit'}/>} path='admin_update_event/:pid' />}
-            {Auth.user_state && <Route element={<Attend/>} path='attend/:eid' />}
-            {!Auth.user_state && <Route element={<LoginPage/>} path='attend/:eid' />}
+            <Route element={<LoginPage/>} path='/login' />
+            <Route element={<ContactPage/>} path='/contact' />
+            <Route element={<JoinUsPage/>} path='/joinus' />
+            { Auth.user_state && <Route element={<AccountPage/>} path='/account' />}
+            { Auth.user_state && (Auth.UserLevel === "tutor" || Auth.UserLevel === "admin") && <Route element={<EventsPage/>}  path='/events'/>}
+            { Auth.user_state && (Auth.UserLevel === "tutor" || Auth.UserLevel === "admin")  && <Route element={<EventsPage />} path='/tutor_event' />}
+            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostNews/>} path='/admin_post_news' />}
+            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostNews type={'edit'}/>} path='/admin_update_post/:pid' />}
+            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostEvent/>} path='/admin_post_event' />}
+            { Auth.user_state && Auth.UserLevel === "admin" && <Route element={<PostEvent type={'edit'}/>} path='/admin_update_event/:pid' />}
+            {Auth.user_state && <Route element={<Attend/>} path='/attend/:eid' />}
+            {!Auth.user_state && <Route element={<LoginPage/>} path='/attend/:eid' />}
             <Route element={<Home/>} path='*'/>
           
         </Routes>

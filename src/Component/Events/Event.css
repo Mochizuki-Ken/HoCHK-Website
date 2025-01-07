@@ -158,7 +158,69 @@
     background-color: rgb(244, 244, 244);
 }
 
-
+.Event_Main_Div .inputPopDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    box-shadow: 1px 1px rgb(181, 178, 178);
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Event_Main_Div .inputPopDiv .title{
+    font-size: x-large;
+    color: rgb(124, 124, 124);
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+}
+.Event_Main_Div .inputPopDiv label{
+    font-size: larger;
+    color: rgb(131, 130, 130);
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+}
+.Event_Main_Div .inputPopDiv .fill_div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.Event_Main_Div .inputPopDiv input{
+    font-size: x-large;
+    font-weight: 200;
+}
+.Event_Main_Div .inputPopDiv textarea{
+    font-size: x-large;
+    font-weight: 200;
+    width: 150%;
+}
+.Event_Main_Div .inputPopDiv .btn_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.Event_Main_Div .inputPopDiv .btn_div button{
+    background-color: rgb(240, 142, 89);
+    transition: 0.2s;
+    /* width: 80%; */
+    height: 40px;
+    border: 0;
+    color: aliceblue;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang HK", PingFang-SC-Regular, PingFang, "Hiragino Sans GB", STHeiti, "Microsoft JhengHei", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    
+    border-radius: 5px;
+}
 
 .Event_Main_Div .Qrcode_div{
     position: fixed;
@@ -300,6 +362,17 @@
     }
     .Event_Main_Div .Qrcode_div img{
         width: 90%;
+    }
+    .Event_Main_Div .inputPopDiv{
+        width: 90%;
+    }
+    .Event_Main_Div .inputPopDiv input{
+        font-size: larger;
+        font-weight: 200;
+    }
+    .Event_Main_Div .inputPopDiv textarea{
+        font-size: larger;
+        font-weight: 200;
     }
     
     

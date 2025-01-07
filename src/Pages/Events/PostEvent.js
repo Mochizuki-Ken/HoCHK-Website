@@ -68,7 +68,7 @@ export default function PostEvent({type}) {
           doc.set(
             {
               Topic:NewEventData.Topic,
-              Instructor:NewEventData.Instructor,
+              Instructor:"",
               CreateAt:firebase.firestore.Timestamp.now(),
               EventDateTime:firebase.firestore.Timestamp.fromDate(new Date(Date.parse(NewEventData.EventDateTime))),
               RegisterDeadLine:firebase.firestore.Timestamp.fromDate(new Date(Date.parse(NewEventData.RegisterDeadLine))),
@@ -76,11 +76,11 @@ export default function PostEvent({type}) {
               RegisterLink:NewEventData.RegisterLink,
               Description:DescriptionData,
               Tutors:[],
-              Type:NewEventData.Type.split("#")||[],
+              Type:[],
               MaxTutor:NewEventData.MaxTutor,
               ImageUrl:imgUrl,
-              Level:NewEventData.Level,
-              Language:NewEventData.Language,
+              Level:"",
+              Language:"",
               Finished:false,
               AttendList:[]
             }
@@ -91,20 +91,20 @@ export default function PostEvent({type}) {
       doc.set(
         {
           Topic:NewEventData.Topic,
-          Instructor:NewEventData.Instructor,
+          Instructor:"",
           CreateAt:firebase.firestore.Timestamp.now(),
           EventDateTime:firebase.firestore.Timestamp.fromDate(new Date(Date.parse(NewEventData.EventDateTime))),
           RegisterDeadLine:firebase.firestore.Timestamp.fromDate(new Date(Date.parse(NewEventData.RegisterDeadLine))),
           Location:NewEventData.Location,
           RegisterLink:NewEventData.RegisterLink,
           Description:DescriptionData,
-          Type:NewEventData.Type.split("#")||[],
+          Type:[],
           Tutors:[],
           MaxTutor:NewEventData.MaxTutor,
           ImageUrl:"none",
           Finished:false,
-          Level:NewEventData.Level,
-          Language:NewEventData.Language,
+          Level:"",
+          Language:"",
           AttendList:[]
         }
       ).then(()=>{GoTo('/events')})
@@ -118,20 +118,20 @@ export default function PostEvent({type}) {
     if (true){
       doc.update(
         {
-          Topic:NewEventData.Topic,
-          Instructor:NewEventData.Instructor,
+          // Topic:NewEventData.Topic,
+          // Instructor:NewEventData.Instructor,
           // CreateAt:firebase.firestore.Timestamp.now(),
           EventDateTime:firebase.firestore.Timestamp.fromDate(new Date(Date.parse(NewEventData.EventDateTime))),
           RegisterDeadLine:firebase.firestore.Timestamp.fromDate(new Date(Date.parse(NewEventData.RegisterDeadLine))),
           Location:NewEventData.Location,
           RegisterLink:NewEventData.RegisterLink,
-          Description:DescriptionData,
-          Type:NewEventData.Type.split("#")||[],
+          // Description:DescriptionData,
+          // Type:NewEventData.Type.split("#")||[],
           MaxTutor:NewEventData.MaxTutor,
           ImageUrl:"empty",
           Finished:false,
-          Level:NewEventData.Level,
-          Language:NewEventData.Language,
+          // Level:NewEventData.Level,
+          // Language:NewEventData.Language,
 
         }
       ).then(()=>{GoTo('/events')})
@@ -152,12 +152,12 @@ export default function PostEvent({type}) {
                 {ImageData!=="empty"&&ImageData[0]==="h"&&<img src={ImageData} />} */}
           </div>
           <div className='text_div'>
-            <label >Topic</label>
-            <input type={'text'} value={NewEventData.Topic} onChange={(e)=>{SetNewEventData({...NewEventData,Topic:e.target.value})}} className='topic'></input>
-            <label ></label>
+            <label >New Event</label>
+            {/* <input type={'text'} value={NewEventData.Topic} onChange={(e)=>{SetNewEventData({...NewEventData,Topic:e.target.value})}} className='topic'></input>
+            <label ></label> */}
             <div className='Details'>
-              <label>Instructor</label>
-              <div className='choose_instructor_div'>
+              {/* <label>Instructor</label> */}
+              {/* <div className='choose_instructor_div'>
 
                 <div className='Search_div'>
                   <input type={'text'} value={TargetTutor} onChange={(e)=>{SetTargetTutor(e.target.value)}}></input>
@@ -194,7 +194,7 @@ export default function PostEvent({type}) {
                   }
                 </div>
 
-              </div>
+              </div> */}
               
               <label>Date</label>
               <input value={NewEventData.EventDateTime} onChange={(e)=>{SetNewEventData({...NewEventData,EventDateTime:e.target.value})}} type={'datetime-local'}></input>
@@ -202,26 +202,26 @@ export default function PostEvent({type}) {
               <label>Location</label>
               <input value={NewEventData.Location} onChange={(e)=>{SetNewEventData({...NewEventData,Location:e.target.value})}} type={'text'}></input>
               
-              <label>Register Link</label>
+              <label>Register Link (for public)</label>
               <input value={NewEventData.RegisterLink} onChange={(e)=>{SetNewEventData({...NewEventData,RegisterLink:e.target.value})}} type={'url'}></input>
               
               {<>
-              <label>Register Deadline</label>
+              <label>Register Deadline (for public)</label>
               <input value={NewEventData.RegisterDeadLine} onChange={(e)=>{SetNewEventData({...NewEventData,RegisterDeadLine:e.target.value})}} type={'datetime-local'}></input>
               </>}
 
               <label>Max Tutor</label>
               <input value={NewEventData.MaxTutor} onChange={(e)=>{SetNewEventData({...NewEventData,MaxTutor:e.target.value})}} type={'number'}></input>
 
-              <label>Level</label>
-              <input value={NewEventData.Level} onChange={(e)=>{SetNewEventData({...NewEventData,Level:e.target.value})}} max={3} min={1} type={'number'}></input>
+              {/* <label>Level</label>
+              <input value={NewEventData.Level} onChange={(e)=>{SetNewEventData({...NewEventData,Level:e.target.value})}} max={3} min={1} type={'number'}></input> */}
             
-              <label>Language</label>
-              <input value={NewEventData.Language} onChange={(e)=>{SetNewEventData({...NewEventData,Language:e.target.value})}} type={'text'}></input>
+              {/* <label>Language</label>
+              <input value={NewEventData.Language} onChange={(e)=>{SetNewEventData({...NewEventData,Language:e.target.value})}} type={'text'}></input> */}
             
             </div>
 
-            <div className='description_div'>
+            {/* <div className='description_div'>
               <label>Description</label>
               <textarea id="textArea"  onKeyDown={(e) => {
                         if (e.key === "Enter") {
@@ -233,8 +233,9 @@ export default function PostEvent({type}) {
                     }} value={DescriptionData} onChange={(e)=>{SetDescriptionData(e.target.value)}}>
 
               </textarea>
-            </div>
-            <input className="type" value={NewEventData.Type}  onChange={(e)=>{SetNewEventData({...NewEventData,Type:e.target.value.toLocaleUpperCase()})}} placeholder="#TYPE"></input>
+            </div> */}
+
+            {/* <input className="type" value={NewEventData.Type}  onChange={(e)=>{SetNewEventData({...NewEventData,Type:e.target.value.toLocaleUpperCase()})}} placeholder="#TYPE"></input> */}
             <div className="btns_div">
               <button className="back_btn" onClick={()=>{GoTo("/Events")}}>BACK</button>
               <button className="post_btn" onClick={()=>{if(Params.pid){update()}else{Post()}}} >{Params.pid?("UPDATE"):("POST")}</button>

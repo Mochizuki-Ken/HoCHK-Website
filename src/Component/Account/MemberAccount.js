@@ -62,6 +62,7 @@ export default function MemberAccount({Auth}) {
 
         </div> */}
         <div className='bottom_div'>
+            <label className='title1'>{Text("Member")} ( {Auth.UserName} | {Auth.UserEmail} )</label>
             <button className='LogOut_btn' onClick={()=>{firebase.auth().signOut()}}>{Text("LogOut")}</button>
             <label className='title1'>{Text("EventRecords")} ( {Events_data.length} )</label>
 

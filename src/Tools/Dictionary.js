@@ -3,6 +3,7 @@ const Dictionary = {
     eng:{
         Email:"Email",
         Search:"Search",
+        Member:"Member",
         Instructor:"Instructor",
         Tutors:"Tutors",
         DateTime:"DateTime",
@@ -12,6 +13,7 @@ const Dictionary = {
         ResgisterDeadLine:"Register DeadLine",
         Register:"Register",
         Register2:"Register",
+        InstructorRegister:"Instructor Register",
         TutorRegister:"Tutor Register",
         CancelRegister:"Cancel Register",
         Full:"Full",
@@ -119,6 +121,7 @@ const Dictionary = {
     chi:{
         Email:"電郵",
         Search:"搜尋",
+        Member:"成員",
         Instructor:"講師",
         Tutors:"協助導師",
         DateTime:"日期時間",
@@ -128,7 +131,8 @@ const Dictionary = {
         RegisterDeadLine:"截止報名日期",
         Register:"報名",
         Register2:"註冊",
-        TutorRegister:"導師報名",
+        InstructorRegister:"講師報名",
+        TutorRegister:"協助導師報名",
         CancelRegister:"取消報名",
         Full:"已滿",
         MoreDetail:"更多",

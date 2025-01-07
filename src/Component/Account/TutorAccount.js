@@ -6,6 +6,7 @@ import 'firebase/compat/firestore'
 import { Waypoint } from 'react-waypoint'
 import Event from '../Events/Event'
 import Text from '../../Tools/Dictionary'
+import { Link } from 'react-router-dom'
 export default function TutorAccount({Auth}) {
   const [RecordsState,SetRecordsState] = useState("Instructor")
 
@@ -17,7 +18,7 @@ export default function TutorAccount({Auth}) {
     if(RecordsState === "Instructor"){
       firebase.firestore().collection('Events')
       .orderBy('CreateAt','desc')
-      .where("Instructor.uid",'==',Auth.UserID)
+      .where("Instructor.UserID",'==',Auth.UserID)
       .startAfter(lastPostRef.current || 0)
       .limit(2)
       .get()
@@ -50,7 +51,7 @@ export default function TutorAccount({Auth}) {
     if(RecordsState === "Instructor" || e === "Instructor"){
       firebase.firestore().collection('Events')
       .orderBy('CreateAt','desc')
-      .where("Instructor.uid",'==',Auth.UserID)
+      .where("Instructor.UserID",'==',Auth.UserID)
       .limit(3)
       .get()
       .then((data)=>{
@@ -127,7 +128,7 @@ export default function TutorAccount({Auth}) {
 
       </div>
 
-      
+      <Link className='link' to={'/events'}>{Text("NavEvents")}(Tutor)</Link>
 
       <div className='btns2_div'>
         <button onClick={()=>{SetState("Setting");}}>{Text("Profile")}</button>
